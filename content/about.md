@@ -1,6 +1,11 @@
 ---
-date: "2016-05-05T21:48:51-07:00"
 title: About
+author: Scott Sabol
+date: '2020-06-11'
+tags:
+  - about
 ---
 
-This is a "hello world" example website for the [**blogdown**](https://github.com/rstudio/blogdown) package. The theme was forked from [@jrutheiser/hugo-lithium-theme](https://github.com/jrutheiser/hugo-lithium-theme) and modified by [Yihui Xie](https://github.com/yihui/hugo-lithium).
+Hello, I am Scott Sabol.  I've wanted to start a website for some time now.  I haven't really figured out what it will be about, so bear with me as random topics, work, or ideas float out into the various posts.  I initially thought it would be about   I feel like a late comer to this whole website/technology/coding party, but am excited to learn and pick things up as I go.  Below is a little bit more about me personally.
+
+I originally hail from North Dakota, but currently reside in the Twin Cities metro in Minnesota.  I am a husband, father, and I like to nerd out on various hobbies.  

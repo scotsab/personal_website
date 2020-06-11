@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>A Hugo website</title>
-    <link>/</link>
-    <description>Recent content on A Hugo website</description>
+    <title>about on A Hugo website</title>
+    <link>/tags/about/</link>
+    <description>Recent content in about on A Hugo website</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Thu, 11 Jun 2020 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="/tags/about/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
@@ -18,15 +18,6 @@
       
       <guid>/about/</guid>
       <description>Hello, I am Scott Sabol. I&amp;rsquo;ve wanted to start a website for some time now. I haven&amp;rsquo;t really figured out what it will be about, so bear with me as random topics, work, or ideas float out into the various posts. I initially thought it would be about I feel like a late comer to this whole website/technology/coding party, but am excited to learn and pick things up as I go.</description>
-    </item>
-    
-    <item>
-      <title>What Am I Doing?</title>
-      <link>/2020/06/10/first-post/</link>
-      <pubDate>Wed, 10 Jun 2020 00:00:00 +0000</pubDate>
-      
-      <guid>/2020/06/10/first-post/</guid>
-      <description>This is my first post about what I am doing with this website</description>
     </item>
     
   </channel>
