@@ -5,7 +5,11 @@ date: '2020-06-10'
 tags:
   - blog
   - R
+  - ggplot2
+  - Rmarkdown
 slug: first-post
 ---
 
-This is my first post about what I am doing with this website
+I have no idea why I have started this, well, I guess blog.  I've toyed around with the idea that it could be something where I put information that I learn and need one spot to keep it all.  I think I'll go with that.  R programming language has also been something that I have been learning/writing in for a little while now.  Ggplot2 has been a package that has been fascinating to me and learning about graphics and design is something that fills my nerdy tech bucket.  I think this first post and a series of posts will be notes, exercises, and other thoughts as I go through the [ggplot2 book](https://ggplot2-book.org/).
+
+Oh, I have no idea how to use RMarkdown, so I guess this blog will be my trial by fire.  
