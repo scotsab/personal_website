@@ -10,6 +10,21 @@ tags:
 slug: first-post
 ---
 
-I have no idea why I have started this, well, I guess blog.  I've toyed around with the idea that it could be something where I put information that I learn and need one spot to keep it all.  I think I'll go with that.  R programming language has also been something that I have been learning/writing in for a little while now.  Ggplot2 has been a package that has been fascinating to me and learning about graphics and design is something that fills my nerdy tech bucket.  I think this first post and a series of posts will be notes, exercises, and other thoughts as I go through the [ggplot2 book](https://ggplot2-book.org/).
+I have no idea why I have started this, well, I guess blog.  I've toyed around with the idea that it could be something where I put information that I learn and need one spot to keep it all.  I think I'll go with that.  
+
+R programming language has also been something that I have been learning/writing in for a little while now.  Ggplot2 has been a package that has been fascinating to me and learning about graphics and design is something that fills my nerdy tech bucket.  I think this first post and a series of posts will be notes, exercises, and other thoughts as I go through the [ggplot2 book](https://ggplot2-book.org/) by Hadley Wickham.
 
 Oh, I have no idea how to use RMarkdown, so I guess this blog will be my trial by fire.  
+
+## Chapter 1
+
+Chapter 1 introduces the Grammar of Graphics concept.
+
+* **Data** and their aesthetic **mapping**.
+* **Layers** comprised of **geoms** and **stats**
+* **Scales** map values in the data space to values in an aesthetic space
+* **Coord** is short for the coordinate system
+* **Facet**ing to break up the data into subsets
+* **Theme** to control the finer points or details.
+
+
