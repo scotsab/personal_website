@@ -27,3 +27,31 @@ slug: first-post
 <li><strong>Theme</strong> to control the finer points or details.</li>
 </ul>
 </div>
+<div id="chapter-2" class="section level2">
+<h2>Chapter 2</h2>
+<p>So chapter 2 jumps right in to creating graphs using the mpg dataset. I’ll jump into the exercises in this first part as there isn’t too much detail right off the bat.</p>
+<div id="exercises-ill-be-jumping-around-a-bit" class="section level3">
+<h3>2.2.1 Exercises (I’ll be jumping around a bit)</h3>
+<p>Question 3 Convert mpg to European standard l/100km.</p>
+<pre class="r"><code>library(ggplot2)
+library(dplyr)</code></pre>
+<pre class="r"><code>mpg %&gt;% 
+  mutate(cty_l_per_100km = (1 / (cty * (100 / 62) * (1 / 3.78541))) / 100,
+         hwy_l_per_100km = (1 / (hwy * (100 / 62) * (1 / 3.78541))) / 100) %&gt;% 
+  select(cty, cty_l_per_100km, hwy, hwy_l_per_100km)</code></pre>
+<pre><code>## # A tibble: 234 x 4
+##      cty cty_l_per_100km   hwy hwy_l_per_100km
+##    &lt;int&gt;           &lt;dbl&gt; &lt;int&gt;           &lt;dbl&gt;
+##  1    18         0.00130    29        0.000809
+##  2    21         0.00112    29        0.000809
+##  3    20         0.00117    31        0.000757
+##  4    21         0.00112    30        0.000782
+##  5    16         0.00147    26        0.000903
+##  6    18         0.00130    26        0.000903
+##  7    18         0.00130    27        0.000869
+##  8    18         0.00130    26        0.000903
+##  9    16         0.00147    25        0.000939
+## 10    20         0.00117    28        0.000838
+## # … with 224 more rows</code></pre>
+</div>
+</div>
