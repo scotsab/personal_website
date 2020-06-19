@@ -16,7 +16,7 @@ R programming language has also been something that I have been learning/writing
 
 Oh, I have no idea how to use RMarkdown, so I guess this blog will be my trial by fire.  
 
-## Chapter 1
+# Chapter 1
 
 Chapter 1 introduces the Grammar of Graphics concept.
 
@@ -27,13 +27,14 @@ Chapter 1 introduces the Grammar of Graphics concept.
 * **Facet**ing to break up the data into subsets
 * **Theme** to control the finer points or details.
 
-##Chapter 2
+#Chapter 2
 
 So chapter 2 jumps right in to creating graphs using the mpg dataset.  I'll jump into the exercises in this first part as there isn't too much detail right off the bat.
 
+## Section 2.2  
 ### 2.2.1 Exercises (I'll be jumping around a bit)
 
-Question 3
+Question 3  
 Convert mpg to European standard l/100km.
 ```{r message = FALSE}
 library(ggplot2)
@@ -41,12 +42,28 @@ library(dplyr)
 ```
 ```{r}
 mpg %>% 
-  mutate(cty_l_per_100km = (1 / (cty * (100 / 62) * (1 / 3.78541))) / 100,
-         hwy_l_per_100km = (1 / (hwy * (100 / 62) * (1 / 3.78541))) / 100) %>% 
+  mutate(cty_l_per_100km = (1 / (cty * (1 / 62) * (1 / 3.78541))),
+         hwy_l_per_100km = (1 / (hwy * (1 / 62) * (1 / 3.78541)))) %>% 
   select(cty, cty_l_per_100km, hwy, hwy_l_per_100km)
 
 ```
+Question 4  
+Which manufacturer has the most models?
+```{r}
+mpg %>% 
+  distinct(manufacturer, model) %>% 
+  group_by(manufacturer) %>% 
+  tally() %>% 
+  arrange(desc(n))
+```
 
-
+Which model has the most variants?
+```{r}
+mpg %>% 
+  group_by(model) %>% 
+  tally() %>% 
+  arrange(desc(n))
+```
+## Section 2.3
 
 
