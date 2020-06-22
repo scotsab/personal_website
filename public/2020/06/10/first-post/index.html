@@ -167,6 +167,27 @@ Which manufacturer has the most models?</p>
 </div>
 <div id="section-2.3" class="section level2">
 <h2>Section 2.3</h2>
+<p>3 key components of every ggplot2 plot:</p>
+<ul>
+<li>data</li>
+<li>aesthetic mappings</li>
+<li>geom function</li>
+</ul>
+<div id="exercises" class="section level3">
+<h3>2.3.1 Exercises</h3>
+<p>Question 2</p>
+<pre class="r"><code>ggplot(mpg, aes(model, manufacturer)) + geom_point()</code></pre>
+<p><img src="/post/2020-06-10-first-post_files/figure-html/unnamed-chunk-5-1.png" width="672" /> Point geom not useful on two qualitative variables.</p>
+<p>Question 3</p>
+<pre class="r"><code>ggplot(mpg, aes(cty, hwy)) + geom_point()</code></pre>
+<p><img src="/post/2020-06-10-first-post_files/figure-html/unnamed-chunk-6-1.png" width="672" /></p>
+<pre class="r"><code>ggplot(diamonds, aes(carat, price)) + geom_point()</code></pre>
+<p><img src="/post/2020-06-10-first-post_files/figure-html/unnamed-chunk-7-1.png" width="672" /></p>
+<pre class="r"><code>ggplot(economics, aes(date, unemploy)) + geom_line()</code></pre>
+<p><img src="/post/2020-06-10-first-post_files/figure-html/unnamed-chunk-8-1.png" width="672" /></p>
+<pre class="r"><code>ggplot(mpg, aes(cty)) + geom_histogram()</code></pre>
+<p><img src="/post/2020-06-10-first-post_files/figure-html/unnamed-chunk-9-1.png" width="672" /></p>
+</div>
 </div>
 </div>
 
