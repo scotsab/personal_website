@@ -62,7 +62,7 @@
 
   <article class="article">
     
-    <span class="article-duration">3 min read</span>
+    <span class="article-duration">4 min read</span>
     
 
     <h1 class="article-title">What Am I Doing?</h1>
@@ -187,6 +187,41 @@ Which manufacturer has the most models?</p>
 <p><img src="/post/2020-06-10-first-post_files/figure-html/unnamed-chunk-8-1.png" width="672" /></p>
 <pre class="r"><code>ggplot(mpg, aes(cty)) + geom_histogram()</code></pre>
 <p><img src="/post/2020-06-10-first-post_files/figure-html/unnamed-chunk-9-1.png" width="672" /></p>
+</div>
+</div>
+<div id="section-2.4" class="section level2">
+<h2>Section 2.4</h2>
+<p>Color, shape, or size can be added to the aesthetic mappings in a ggplot function. Assigning a variable to this will scale the respective aesthetic for that variable. This is built in.</p>
+<p>To assign a specific color to the values, call the aesthetic outside of the aes() call.</p>
+</div>
+<div id="section-2.5" class="section level2">
+<h2>Section 2.5</h2>
+<p>Facetting creates a tables of grapics by splitting data into subsets.</p>
+</div>
+<div id="section-2.6" class="section level2">
+<h2>Section 2.6</h2>
+<p>Commonly used geoms:</p>
+<ul>
+<li><strong>geom_smooth</strong> fits a smoother to the data</li>
+<li><strong>geom_boxplot</strong> creates a box and whisker plot</li>
+<li><strong>geom_historgram</strong> distribution of continuous variables</li>
+<li><strong>geom_freqpoly</strong> distribution of continuous variables</li>
+<li><strong>geom_bar</strong> distribution of categorical variables</li>
+<li><strong>geom_path</strong> draws lines between points</li>
+<li><strong>geom_line</strong> draws lines between points</li>
+</ul>
+<div id="section-2.6.1-adding-a-smoother" class="section level3">
+<h3>Section 2.6.1 Adding a smoother</h3>
+<p>Adding a smooth line through geom_smooth helps provide a pattern to the data. Key arguments in geom_smooth are:</p>
+<ul>
+<li><strong>se</strong> turns the point-wise confidence interval on or off</li>
+<li><strong>method</strong> allows the choice of which model is used to fit the curve<br />
+</li>
+<li><em>loess</em> default for small n, see ?loess</li>
+<li><em>gam</em> generalized additive model, requiers <strong>mgcv</strong> package</li>
+<li><em>lm</em> linear model</li>
+<li><em>rlm</em> similar to <em>lm</em> but more robust, from <strong>MASS</strong> package</li>
+</ul>
 </div>
 </div>
 </div>

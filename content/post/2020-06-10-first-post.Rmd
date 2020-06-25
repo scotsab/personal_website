@@ -95,6 +95,36 @@ ggplot(economics, aes(date, unemploy)) + geom_line()
 ggplot(mpg, aes(cty)) + geom_histogram()
 ```
 
+## Section 2.4
 
- 
+Color, shape, or size can be added to the aesthetic mappings in a ggplot function.  Assigning a variable to this will scale the respective aesthetic for that variable.  This is built in.
+
+To assign a specific color to the values, call the aesthetic outside of the aes() call.
+
+## Section 2.5
+
+Facetting creates a tables of grapics by splitting data into subsets.
+
+## Section 2.6
+
+Commonly used geoms:
+
+ - **geom_smooth** fits a smoother to the data
+ - **geom_boxplot** creates a box and whisker plot
+ - **geom_historgram** distribution of continuous variables
+ - **geom_freqpoly** distribution of continuous variables
+ - **geom_bar** distribution of categorical variables
+ - **geom_path** draws lines between points
+ - **geom_line** draws lines between points
+
+### Section 2.6.1 Adding a smoother
+
+Adding a smooth line through geom_smooth helps provide a pattern to the data.  Key arguments in geom_smooth are:
+
+ - **se** turns the point-wise confidence interval on or off
+ - **method** allows the choice of which model is used to fit the curve  
+  - *loess* default for small n, see ?loess
+  - *gam* generalized additive model, requiers **mgcv** package
+  - *lm* linear model
+  - *rlm* similar to *lm* but more robust, from **MASS** package
 
