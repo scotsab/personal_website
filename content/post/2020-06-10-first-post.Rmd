@@ -123,8 +123,8 @@ Adding a smooth line through geom_smooth helps provide a pattern to the data.  K
 
  - **se** turns the point-wise confidence interval on or off
  - **method** allows the choice of which model is used to fit the curve  
-  - *loess* default for small n, see ?loess
-  - *gam* generalized additive model, requiers **mgcv** package
-  - *lm* linear model
-  - *rlm* similar to *lm* but more robust, from **MASS** package
+    - *loess* default for small n, see ?loess
+    - *gam* generalized additive model, requiers **mgcv** package
+    - *lm* linear model
+    - *rlm* similar to *lm* but more robust, from **MASS** package
 
